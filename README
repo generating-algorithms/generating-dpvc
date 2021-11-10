@@ -1,0 +1,77 @@
+This README includes:
+1) System requirements
+2) How to install
+3) How to run
+4) Output explanation
+5) Visualizing the output
+
+System requirements
+-------------------
+You need to have the following installed on your system:
+1) g++ with c++11 support - we used g++ 10.3.0
+2) OpenMP library (https://www.openmp.org/)
+3) make for convenient usage of Makefile
+
+How to install
+--------------
+Run "make" in the main folder next to "Makefile". A file called "generating_algorithm" will be compiled.
+
+How to run
+----------
+The "generating_algorithm" program requires 3 arguments:
+1) DPVC_PATH_LEN - integer - The length of d-path we want the algorithm to solve.
+2) DPVC_BF       - float   - The desired branching factor we want to achieve.
+3) GENERATIONS   - integer - The maximum number of iterations the algorithm will perform.
+
+For example you can run the algorithm: "./generating_algorithm 5 2.9 4" to solve 5-PVC with target branching factor 2.9 for maximum of 4 iterations.
+
+The program logs its progress to stderr.
+If the program succeeds, the final lines of the stderr output will be:
+
+failed with:
+-- max_branching_rules_bf=2.89977
+-- branching_rules=10397
+-- max_not_solved_branching_rules_bf=5.00001
+-- not_solved_branching_rules=715
+
+If the program fails, the final lines of the stderr output will be:
+
+success with:
+-- max_branching_rules_bf=3.09891
+-- branching_rules=1535
+-- max_not_solved_branching_rules_bf=0
+-- not_solved_branching_rules=0
+
+
+Output explanation
+------------------
+In addition to the stderr output, 3 files will be generated:
+1) stats.out - The file contains statistics about the run in JSON format.
+2) branching_rules.out - This file contains the branching rules with good branching factors (better than target). The format is lines of JSON - each line is a JSON document representing one rule.
+3) not_solved_branching_rules.out - Same as "branching_rules.out" but with branching rules with bad branching factors. This file is populated in case of failure (exceeding GENERATIONS).
+
+
+The line of branching_rules.out (or not_solved_branching_rules.out) looks like this:
+
+{"graph":{"n":3,"edges":[[0,1],[0,2]]},"red_vertices":[],"minimal_branches":[[0],[1],[2]],"dominance_free_branches":[],"branches":[[0],[1],[2]],"bf":3.000000,"type":"minimal"}
+
+And the single fields are:
+1) graph - Encoding of the graph. "n" is the number of vertices and "edges" are its edges. Vertices of our graphs always start from 0 and end with n-1.
+2) red_vertices - List of the red vertices of the graph.
+3) minimal_branches - List of lists of vertices. Encodes the branches of minimal solutions.
+4) dominance_free_branches - Same as minimal_branches but encodes dominance-free solutions.
+5) branches - Same as minimal_branches but encodes the final solutions after adjustments.
+6) bf - The branching factor of this rule.
+7) type - Type of this rule. Describes whether it is a branching rule or it was handled.
+
+Visualizing the output
+----------------------
+We provide a python script that visualizes the branching rules. It generates a html page with visual representations of all the rules given.
+The script requires "python3" and the following packages:
+1) networkx - Install with "pip install networkx"
+2) matplotlib - Install with "pip install matplotlib"
+
+For example to export branching rules in "branching_rules.out" to new directory called "export_dir", run the script like:
+"python3 export_branching_rules_to_html.py branching_rules.out export_dir"
+
+The script will create the directory "export_dir" and within a file "index.html". You can open the "index.html" file by any browser.
