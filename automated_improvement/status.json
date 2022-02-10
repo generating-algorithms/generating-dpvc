@@ -29,45 +29,45 @@
       }
     },
     "4": {
-      "max_branching_rules_bf": 2.29862,
-      "branching_rules": 5022,
+      "max_branching_rules_bf": 2.28341,
+      "branching_rules": 5813,
       "max_branching_rules_size": 13,
       "max_not_solved_branching_rules_bf": 0,
       "not_solved_branching_rules": 0,
-      "time_s": 6,
+      "time_s": 8,
       "target": {
         "dpvc": 4,
-        "bf": 2.2988799999999996,
+        "bf": 2.28356,
         "gen": 20,
-        "output_dir_path": "automated_improvement_output/data/4_2.2989_20"
+        "output_dir_path": "automated_improvement_output/data/4_2.2836_20"
       }
     },
     "5": {
-      "max_branching_rules_bf": 2.9425,
-      "branching_rules": 13170,
+      "max_branching_rules_bf": 2.93965,
+      "branching_rules": 13174,
       "max_branching_rules_size": 13,
+      "max_not_solved_branching_rules_bf": 0,
+      "not_solved_branching_rules": 0,
+      "time_s": 8,
+      "target": {
+        "dpvc": 5,
+        "bf": 2.94033,
+        "gen": 20,
+        "output_dir_path": "automated_improvement_output/data/5_2.9403_20"
+      }
+    },
+    "6": {
+      "max_branching_rules_bf": 4.075,
+      "branching_rules": 11403,
+      "max_branching_rules_size": 11,
       "max_not_solved_branching_rules_bf": 0,
       "not_solved_branching_rules": 0,
       "time_s": 7,
       "target": {
-        "dpvc": 5,
-        "bf": 2.94292,
-        "gen": 20,
-        "output_dir_path": "automated_improvement_output/data/5_2.9429_20"
-      }
-    },
-    "6": {
-      "max_branching_rules_bf": 4.27493,
-      "branching_rules": 11121,
-      "max_branching_rules_size": 10,
-      "max_not_solved_branching_rules_bf": 0,
-      "not_solved_branching_rules": 0,
-      "time_s": 6,
-      "target": {
         "dpvc": 6,
-        "bf": 4.28754,
+        "bf": 4.0767999999999995,
         "gen": 20,
-        "output_dir_path": "automated_improvement_output/data/6_4.2875_20"
+        "output_dir_path": "automated_improvement_output/data/6_4.0768_20"
       }
     },
     "7": {
