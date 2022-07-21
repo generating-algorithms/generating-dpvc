@@ -1,7 +1,7 @@
 {
   "best_bf_run": {
     "2": {
-      "max_branching_rules_bf": 1.38028,
+      "max_branching_rules_bf": 1.328028,
       "branching_rules": 21,
       "max_branching_rules_size": 5,
       "max_not_solved_branching_rules_bf": 0,
