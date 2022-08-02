@@ -1,7 +1,7 @@
 {
   "best_bf_run": {
     "2": {
-      "max_branching_rules_bf": 1.328028,
+      "max_branching_rules_bf": 1.38028,
       "branching_rules": 21,
       "max_branching_rules_size": 5,
       "max_not_solved_branching_rules_bf": 0,
@@ -12,6 +12,90 @@
         "bf": 1.3943400000000001,
         "gen": 20,
         "output_dir_path": "automated_improvement_output/data/2_1.3943_20"
+      }
+    },
+    "3": {
+      "max_branching_rules_bf": 3,
+      "branching_rules": 2,
+      "max_branching_rules_size": 3,
+      "max_not_solved_branching_rules_bf": 0,
+      "not_solved_branching_rules": 0,
+      "time_s": 0,
+      "target": {
+        "dpvc": 3,
+        "bf": 3,
+        "gen": 20,
+        "output_dir_path": "automated_improvement_output/data/3_3.0000_20"
+      }
+    },
+    "4": {
+      "max_branching_rules_bf": 4,
+      "branching_rules": 5,
+      "max_branching_rules_size": 4,
+      "max_not_solved_branching_rules_bf": 0,
+      "not_solved_branching_rules": 0,
+      "time_s": 0,
+      "target": {
+        "dpvc": 4,
+        "bf": 4,
+        "gen": 20,
+        "output_dir_path": "automated_improvement_output/data/4_4.0000_20"
+      }
+    },
+    "5": {
+      "max_branching_rules_bf": 5,
+      "branching_rules": 18,
+      "max_branching_rules_size": 5,
+      "max_not_solved_branching_rules_bf": 0,
+      "not_solved_branching_rules": 0,
+      "time_s": 0,
+      "target": {
+        "dpvc": 5,
+        "bf": 5,
+        "gen": 20,
+        "output_dir_path": "automated_improvement_output/data/5_5.0000_20"
+      }
+    },
+    "6": {
+      "max_branching_rules_bf": 6,
+      "branching_rules": 91,
+      "max_branching_rules_size": 6,
+      "max_not_solved_branching_rules_bf": 0,
+      "not_solved_branching_rules": 0,
+      "time_s": 0,
+      "target": {
+        "dpvc": 6,
+        "bf": 6,
+        "gen": 20,
+        "output_dir_path": "automated_improvement_output/data/6_6.0000_20"
+      }
+    },
+    "7": {
+      "max_branching_rules_bf": 7,
+      "branching_rules": 734,
+      "max_branching_rules_size": 7,
+      "max_not_solved_branching_rules_bf": 0,
+      "not_solved_branching_rules": 0,
+      "time_s": 0,
+      "target": {
+        "dpvc": 7,
+        "bf": 7,
+        "gen": 20,
+        "output_dir_path": "automated_improvement_output/data/7_7.0000_20"
+      }
+    },
+    "8": {
+      "max_branching_rules_bf": 8,
+      "branching_rules": 10030,
+      "max_branching_rules_size": 8,
+      "max_not_solved_branching_rules_bf": 0,
+      "not_solved_branching_rules": 0,
+      "time_s": 14,
+      "target": {
+        "dpvc": 8,
+        "bf": 8,
+        "gen": 20,
+        "output_dir_path": "automated_improvement_output/data/8_8.0000_20"
       }
     }
   }
