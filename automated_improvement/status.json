@@ -71,17 +71,17 @@
       }
     },
     "7": {
-      "max_branching_rules_bf": 4.74873,
+      "max_branching_rules_bf": 4.7464,
       "branching_rules": 261889,
       "max_branching_rules_size": 12,
       "max_not_solved_branching_rules_bf": 0,
       "not_solved_branching_rules": 0,
-      "time_s": 775,
+      "time_s": 776,
       "target": {
         "dpvc": 7,
-        "bf": 4.752479999999999,
+        "bf": 4.74773,
         "gen": 20,
-        "output_dir_path": "automated_improvement_output/data/7_4.7525_20"
+        "output_dir_path": "automated_improvement_output/data/7_4.7477_20"
       }
     },
     "8": {
