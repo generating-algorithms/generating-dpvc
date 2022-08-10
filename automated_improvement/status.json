@@ -15,17 +15,17 @@
       }
     },
     "3": {
-      "max_branching_rules_bf": 1.79892,
-      "branching_rules": 1604,
-      "max_branching_rules_size": 13,
+      "max_branching_rules_bf": 1.78882,
+      "branching_rules": 3958,
+      "max_branching_rules_size": 14,
       "max_not_solved_branching_rules_bf": 0,
       "not_solved_branching_rules": 0,
-      "time_s": 81,
+      "time_s": 342,
       "target": {
         "dpvc": 3,
-        "bf": 1.79946,
+        "bf": 1.78892,
         "gen": 20,
-        "output_dir_path": "automated_improvement_output/data/3_1.7995_20"
+        "output_dir_path": "automated_improvement_output/data/3_1.7889_20"
       }
     },
     "4": {
@@ -43,31 +43,31 @@
       }
     },
     "5": {
-      "max_branching_rules_bf": 2.99496,
-      "branching_rules": 4535,
-      "max_branching_rules_size": 12,
-      "max_not_solved_branching_rules_bf": 0,
-      "not_solved_branching_rules": 0,
-      "time_s": 93,
-      "target": {
-        "dpvc": 5,
-        "bf": 2.9991700000000003,
-        "gen": 20,
-        "output_dir_path": "automated_improvement_output/data/5_2.9992_20"
-      }
-    },
-    "6": {
-      "max_branching_rules_bf": 3.84191,
-      "branching_rules": 12670,
+      "max_branching_rules_bf": 2.964,
+      "branching_rules": 4736,
       "max_branching_rules_size": 13,
       "max_not_solved_branching_rules_bf": 0,
       "not_solved_branching_rules": 0,
-      "time_s": 89,
+      "time_s": 107,
+      "target": {
+        "dpvc": 5,
+        "bf": 2.9645900000000003,
+        "gen": 20,
+        "output_dir_path": "automated_improvement_output/data/5_2.9646_20"
+      }
+    },
+    "6": {
+      "max_branching_rules_bf": 3.80035,
+      "branching_rules": 13233,
+      "max_branching_rules_size": 13,
+      "max_not_solved_branching_rules_bf": 0,
+      "not_solved_branching_rules": 0,
+      "time_s": 107,
       "target": {
         "dpvc": 6,
-        "bf": 3.8421600000000002,
+        "bf": 3.80092,
         "gen": 20,
-        "output_dir_path": "automated_improvement_output/data/6_3.8422_20"
+        "output_dir_path": "automated_improvement_output/data/6_3.8009_20"
       }
     },
     "7": {
